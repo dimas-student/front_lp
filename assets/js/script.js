@@ -2,7 +2,13 @@
   DOM READY
 =====================================================*/
 
-document.addEventListener("DOMContentLoaded", () => {
+let appInitialized = false;
+
+function initApp() {
+
+    if (appInitialized) return;
+
+    appInitialized = true;
 
     loader();
 
@@ -36,6 +42,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     floatingButtons();
 
+}
+
+document.addEventListener("components:loaded", initApp);
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const componentPlaceholders = [
+        "#loader-component",
+        "#topbar-component",
+        "#header-component",
+        "#footer-component"
+    ];
+
+    const hasComponentPlaceholders = componentPlaceholders.some((selector) =>
+        document.querySelector(selector)
+    );
+
+    if (!hasComponentPlaceholders) {
+
+        initApp();
+
+    }
+
 });
 
 /*=====================================================
@@ -48,15 +77,12 @@ function loader() {
 
     if (!loader) return;
 
-    window.addEventListener("load", () => {
+    setTimeout(() => {
 
-        setTimeout(() => {
+        loader.classList.add("hide");
 
-            loader.classList.add("hide");
+    }, 300);
 
-        }, 900);
-
-    });
 
 }
 

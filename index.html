@@ -2,35 +2,23 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>PERUMDAM Among Tirto Kota Batu</title>
-
     <meta name="description" content="Website Resmi PERUMDAM Among Tirto Kota Batu">
-
+    
     <link rel="icon" href="assets/images/logo-pdam.png">
 
     <!-- Font -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
@@ -38,1312 +26,227 @@
     <!-- ==========================================
                     LOADER
     =========================================== -->
-
-    <div class="loader">
-
-        <span></span>
-
-        <p>Memuat Website...</p>
-
-    </div>
+    <div id="loader-component"></div>
 
     <!-- ==========================================
                 SCROLL PROGRESS
     =========================================== -->
-
     <div class="scroll-progress"></div>
 
     <!-- ==========================================
                     TOPBAR
     =========================================== -->
-
-    <div class="topbar">
-
-        <div class="container topbar-content">
-
-            <div class="topbar-left">
-
-                <span>
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    Kota Batu, Jawa Timur
-
-                </span>
-
-                <a href="mailto:info@perumdamkotabatu.co.id">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    info@perumdamkotabatu.co.id
-
-                </a>
-
-                <a href="tel:0341123456">
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    (0341) 123456
-
-                </a>
-
-            </div>
-
-            <div class="topbar-right">
-
-                <span>Ikuti kami:</span>
-
-                <div class="social-media">
-
-                    <a href="#" aria-label="Facebook">
-
-                        <i class="fab fa-facebook-f"></i>
-
-                    </a>
-
-                    <a href="#" aria-label="Instagram">
-
-                        <i class="fab fa-instagram"></i>
-
-                    </a>
-
-                    <a href="#" aria-label="Youtube">
-
-                        <i class="fab fa-youtube"></i>
-
-                    </a>
-
-                    <a href="#" aria-label="Website">
-
-                        <i class="fa-solid fa-globe"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+    <div id="topbar-component"></div>
 
     <!-- ==========================================
                     HEADER
     =========================================== -->
-
-    <header class="header">
-
-        <div class="container">
-
-            <nav class="navbar">
-
-                <!-- Brand -->
-
-                <a href="#home" class="brand">
-
-                    <img src="assets/images/logo-pdam.png" alt="PERUMDAM Logo">
-
-                    <div class="brand-text">
-
-                        <h2>PERUMDAM</h2>
-
-                        <span>Among Tirto Kota Batu</span>
-
-                    </div>
-
-                </a>
-
-                <!-- Menu -->
-
-                <ul class="nav-menu">
-
-                    <li>
-
-                        <a href="#home" class="active">
-
-                            Home
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#billing">
-
-                            Cek Tagihan
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#news">
-
-                            Berita
-
-                        </a>
-
-                    </li>
-
-                    <li class="dropdown">
-
-                        <a href="#">
-
-                            Informasi
-
-                            <i class="fa-solid fa-chevron-down"></i>
-
-                        </a>
-
-                        <ul class="dropdown-menu">
-
-                            <li>
-
-                                <a href="page/profile.html">
-
-                                    <div class="dropdown-icon">
-                                        <i class="fa-solid fa-building-user"></i>
-                                    </div>
-
-                                    <div class="dropdown-text">
-                                        <span>Profil Perusahaan</span>
-                                        <small>Visi, misi &amp; sejarah PERUMDAM</small>
-                                    </div>
-
-                                </a>
-
-                            </li>
-
-                            <li>
-
-                                <a href="page/struktur.html">
-
-                                    <div class="dropdown-icon">
-                                        <i class="fa-solid fa-sitemap"></i>
-                                    </div>
-
-                                    <div class="dropdown-text">
-                                        <span>Struktur Organisasi</span>
-                                        <small>Bagan manajemen &amp; jajaran direksi</small>
-                                    </div>
-
-                                </a>
-
-                            </li>
-
-                            <li>
-
-                                <a href="page/tarif.html">
-
-                                    <div class="dropdown-icon">
-                                        <i class="fa-solid fa-droplet"></i>
-                                    </div>
-
-                                    <div class="dropdown-text">
-                                        <span>Tarif Air</span>
-                                        <small>Golongan &amp; rincian tarif pelanggan</small>
-                                    </div>
-
-                                </a>
-
-                            </li>
-
-                            <li>
-
-                                <a href="page/pengumuman.html">
-
-                                    <div class="dropdown-icon">
-                                        <i class="fa-solid fa-bullhorn"></i>
-                                    </div>
-
-                                    <div class="dropdown-text">
-                                        <span>Pengumuman</span>
-                                        <small>Informasi resmi &amp; edaran terbaru</small>
-                                    </div>
-
-                                </a>
-
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#footer">
-
-                            Kontak
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-                <!-- CTA -->
-
-                <a href="#footer" class="btn-navbar-cta">
-
-                    Hubungi Kami
-
-                </a>
-
-                <!-- Mobile -->
-
-                <div class="hamburger">
-
-                    <span></span>
-
-                    <span></span>
-
-                    <span></span>
-
-                </div>
-
-            </nav>
-
-        </div>
-
-    </header>
+    <div id="header-component"></div>
 
     <!-- ==========================================
                     HERO
     =========================================== -->
-
     <section id="home" class="hero">
-
         <!-- Background Image Layer -->
-
         <div class="hero-bg"></div>
-
         <!-- Gradient Overlay Layer -->
-
         <div class="hero-overlay"></div>
 
         <div class="container hero-container">
-
             <div class="hero-content">
-
                 <!-- LEFT SIDE -->
-
                 <div class="hero-left">
-
-
                     <h1>
-
                         Pelayanan Air Minum
-
                         Bersih, Andal,
-
                         dan Terpercaya
-
                     </h1>
-
                     <p>
-
                         PERUMDAM Among Tirto Kota Batu berkomitmen memberikan
                         layanan air minum berkualitas tinggi dengan teknologi modern,
                         layanan prima, dan inovasi berkelanjutan.
-
                     </p>
-
                     <div class="hero-button">
-
                         <a href="#billing" class="btn-hero-primary">
-
                             <i class="fa-regular fa-user"></i>
-
                             Cek Tagihan
-
                         </a>
-
                         <a href="#footer" class="btn-hero-glass">
-
                             <i class="fa-solid fa-phone"></i>
-
                             Hubungi Kami
-
                         </a>
-
                     </div>
-
                 </div>
 
-                <!-- RIGHT SIDE — Floating Cards -->
-
-                <div class="hero-right-cards">
-
-                    <!-- Floating Card 1 -->
-
-                    <div class="glass-card card-24h">
-
-                        <div class="glass-card-icon">
-
-                            <i class="fa-solid fa-rotate-left"></i>
-
-                            <span>24</span>
-
-                        </div>
-
-                        <div class="glass-card-info">
-
-                            <h4>24 Jam</h4>
-
-                            <p>Layanan Pelanggan<br>Siap Melayani Anda</p>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Floating Card 2 -->
-
-                    <div class="glass-card card-satisfaction">
-
-                        <div class="glass-card-icon">
-
-                            <i class="fa-solid fa-shield-halved"></i>
-
-                        </div>
-
-                        <div class="glass-card-info">
-
-                            <h4>99%</h4>
-
-                            <p>Kepuasan Pelanggan<br>Tingkat Kepuasan Tinggi</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <!-- Komponen Card Kanan -->
+                <div id="hero-cards-component"></div>
             </div>
 
-            <!-- HERO GLASS PANEL (Overlap Main Panel) -->
-
-            <div class="hero-glass-panel">
-
-                <div class="hero-stat-item">
-
-                    <div class="hero-stat-icon">
-
-                        <i class="fa-solid fa-users"></i>
-
-                    </div>
-
-                    <div class="hero-stat-text">
-
-                        <h3 class="hero-stat-counter" data-target="12000" data-suffix="+" data-separator=".">0</h3>
-
-                        <h4>Pelanggan</h4>
-
-                        <p>Pelanggan Aktif Terdaftar</p>
-
-                    </div>
-
-                </div>
-
-                <div class="hero-stat-divider"></div>
-
-                <div class="hero-stat-item">
-
-                    <div class="hero-stat-icon">
-
-                        <i class="fa-solid fa-droplet"></i>
-
-                    </div>
-
-                    <div class="hero-stat-text">
-
-                        <h3 class="hero-stat-counter" data-target="99" data-suffix="%">0</h3>
-
-                        <h4>Kualitas Air Terjaga</h4>
-
-                        <p>Standar Kualitas Terbaik</p>
-
-                    </div>
-
-                </div>
-
-                <div class="hero-stat-divider"></div>
-
-                <div class="hero-stat-item">
-
-                    <div class="hero-stat-icon">
-
-                        <i class="fa-solid fa-headset"></i>
-
-                    </div>
-
-                    <div class="hero-stat-text">
-
-                        <h3 class="hero-stat-counter" data-target="24" data-suffix=" Jam">0</h3>
-
-                        <h4>Layanan Pelanggan</h4>
-
-                        <p>Siap Melayani Setiap Saat</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <!-- Komponen Statistik -->
+            <div id="hero-stats-component"></div>
         </div>
 
         <!-- Multi-Layer 3-Color Wave Divider -->
-
         <div class="hero-wave">
-
             <svg viewBox="0 0 1440 240" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-
                 <defs>
-
-                    <!-- Layer 1: Fresh Lime-Emerald Accent Gradient -->
                     <linearGradient id="hero-wave-lime-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-
                         <stop offset="0%" stop-color="#A3E635" stop-opacity="0.95" />
-
                         <stop offset="45%" stop-color="#84CC16" stop-opacity="0.9" />
-
                         <stop offset="100%" stop-color="#10B981" stop-opacity="0.85" />
-
                     </linearGradient>
-
-                    <!-- Layer 2: Ocean Cyan-Blue Gradient -->
                     <linearGradient id="hero-wave-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-
                         <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" />
-
                         <stop offset="100%" stop-color="#0284C7" stop-opacity="0.95" />
-
                     </linearGradient>
-
                 </defs>
-
-                <!-- Layer 1 (Back Accent): Lime-Green Wave -->
-
-                <path fill="url(#hero-wave-lime-grad)"
-                    d="M0,20 C300,185 500,-10 800,95 C1100,185 1280,10 1440,60 L1440,240 L0,240 Z">
-
-                </path>
-
-                <!-- Layer 2 (Middle): Ocean Cyan-Blue Wave -->
-
-                <path fill="url(#hero-wave-cyan-grad)"
-                    d="M0,60 C240,-10 480,175 760,50 C1040,-45 1260,125 1440,70 L1440,240 L0,240 Z">
-
-                </path>
-
-                <!-- Layer 3 (Foreground): Solid White Wave (Matches Services Background) -->
-
-                <path fill="#ffffff" d="M0,110 C340,180 600,50 900,130 C1200,195 1320,95 1440,115 L1440,240 L0,240 Z">
-
-                </path>
-
+                <path fill="url(#hero-wave-lime-grad)" d="M0,20 C300,185 500,-10 800,95 C1100,185 1280,10 1440,60 L1440,240 L0,240 Z"></path>
+                <path fill="url(#hero-wave-cyan-grad)" d="M0,60 C240,-10 480,175 760,50 C1040,-45 1260,125 1440,70 L1440,240 L0,240 Z"></path>
+                <path fill="#ffffff" d="M0,110 C340,180 600,50 900,130 C1200,195 1320,95 1440,115 L1440,240 L0,240 Z"></path>
             </svg>
-
         </div>
-
     </section>
 
     <!-- ======================================================
                     SERVICES SECTION
     ======================================================= -->
-
     <section id="services" class="services">
-
         <div class="container">
-
             <div class="section-heading fade-up">
-
                 <span class="section-badge">
-
                     <i class="fa-solid fa-droplet"></i>
-
                     LAYANAN KAMI
-
                 </span>
-
-                <h2>
-
-                    Layanan <span class="highlight-blue">Terbaik</span> untuk Anda
-
-                </h2>
-
+                <h2>Layanan <span class="highlight-blue">Terbaik</span> untuk Anda</h2>
                 <p>
-
                     PERUMDAM Among Tirto menyediakan berbagai layanan digital
                     untuk memudahkan masyarakat memperoleh informasi maupun pelayanan secara online.
-
                 </p>
-
             </div>
-
-            <div class="service-grid">
-
-                <!-- CARD 1 -->
-
-                <article class="service-card fade-up delay-1">
-
-                    <div class="service-icon">
-
-                        <i class="fa-solid fa-faucet-drip"></i>
-
-                    </div>
-
-                    <h3>Sambungan Baru</h3>
-
-                    <p>Ajukan pemasangan sambungan air baru secara online dengan mudah dan cepat.</p>
-
-                    <a href="#">
-
-                        Selengkapnya
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </article>
-
-                <!-- CARD 2 -->
-
-                <article class="service-card fade-up delay-2">
-
-                    <div class="service-icon">
-
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-
-                    </div>
-
-                    <h3>Cek Tagihan</h3>
-
-                    <p>Ketahui informasi tagihan air kapan saja secara praktis dan transparan.</p>
-
-                    <a href="#billing">
-
-                        Selengkapnya
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </article>
-
-                <!-- CARD 3 -->
-
-                <article class="service-card fade-up delay-3">
-
-                    <div class="service-icon">
-
-                        <i class="fa-solid fa-circle-exclamation"></i>
-
-                    </div>
-
-                    <h3>Pengaduan</h3>
-
-                    <p>Laporkan gangguan distribusi maupun keluhan pelayanan pelanggan 24/7.</p>
-
-                    <a href="#">
-
-                        Selengkapnya
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </article>
-
-                <!-- CARD 4 -->
-
-                <article class="service-card fade-up delay-1">
-
-                    <div class="service-icon">
-
-                        <i class="fa-solid fa-money-bill-wave"></i>
-
-                    </div>
-
-                    <h3>Tarif Air</h3>
-
-                    <p>Informasi struktur dan rincian tarif berdasarkan kelompok pelanggan terbaru.</p>
-
-                    <a href="#">
-
-                        Selengkapnya
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </article>
-
-                <!-- CARD 5 -->
-
-                <article class="service-card fade-up delay-2">
-
-                    <div class="service-icon">
-
-                        <i class="fa-solid fa-newspaper"></i>
-
-                    </div>
-
-                    <h3>Berita &amp; Info</h3>
-
-                    <p>Ikuti perkembangan kegiatan, pengumuman, dan berita terkini dari kami.</p>
-
-                    <a href="#news">
-
-                        Selengkapnya
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </article>
-
-                <!-- CARD 6 -->
-
-                <article class="service-card fade-up delay-3">
-
-                    <div class="service-icon">
-
-                        <i class="fa-solid fa-headset"></i>
-
-                    </div>
-
-                    <h3>Hubungi Kami</h3>
-
-                    <p>Customer Service kami siap membantu segala kebutuhan informasi Anda.</p>
-
-                    <a href="#">
-
-                        Selengkapnya
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
-                </article>
-
-            </div>
-
+            <!-- Komponen Service Cards -->
+            <div id="service-cards-component"></div>
         </div>
-
     </section>
 
     <!-- ======================================================
                     BILLING SECTION
     ======================================================= -->
-
     <section id="billing" class="billing">
-
         <div class="container">
-
             <div class="section-heading fade-up">
-
                 <span class="section-badge">
-
                     <i class="fa-solid fa-file-invoice-dollar"></i>
-
                     LAYANAN DIGITAL
-
                 </span>
-
                 <h2>Cek Tagihan Air Anda</h2>
-
                 <p>
-
                     Masukkan nomor sambungan pelanggan untuk mengetahui informasi tagihan air,
                     riwayat pembayaran, serta status rekening secara cepat.
-
                 </p>
-
             </div>
-
-            <div class="billing-grid">
-
-                <div class="billing-card fade-up">
-
-                    <div class="billing-icon">
-
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-
-                    </div>
-
-                    <h3>Informasi Tagihan</h3>
-
-                    <p>Masukkan nomor pelanggan yang terdaftar pada rekening PERUMDAM.</p>
-
-                    <form onsubmit="event.preventDefault();">
-
-                        <div class="input-box">
-
-                            <i class="fa-solid fa-hashtag"></i>
-
-                            <input type="text" placeholder="Nomor Pelanggan (contoh: 12345678)">
-
-                        </div>
-
-                        <button type="submit" class="btn-primary">
-
-                            <i class="fa-solid fa-magnifying-glass"></i>
-
-                            Cari Tagihan
-
-                        </button>
-
-                    </form>
-
-                </div>
-
-                <div class="billing-information fade-up">
-
-                    <h3>Cara Mengecek Tagihan</h3>
-
-                    <div class="step">
-
-                        <div class="step-number">1</div>
-
-                        <div>
-
-                            <h4>Masukkan Nomor Pelanggan</h4>
-
-                            <p>Gunakan nomor pelanggan yang tertera pada rekening tagihan air Anda.</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="step">
-
-                        <div class="step-number">2</div>
-
-                        <div>
-
-                            <h4>Klik Cari Tagihan</h4>
-
-                            <p>Sistem akan memproses data rekening Anda secara otomatis dalam detik.</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="step">
-
-                        <div class="step-number">3</div>
-
-                        <div>
-
-                            <h4>Lihat Informasi Tagihan</h4>
-
-                            <p>Total rincian tagihan, pemakaian m³, dan status pembayaran akan ditampilkan.</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <!-- Komponen Billing -->
+            <div id="billing-cards-component"></div>
         </div>
-
     </section>
 
     <!-- ======================================================
                     NEWS SECTION
     ======================================================= -->
-
     <section id="news" class="news">
-
         <div class="container">
-
             <div class="section-heading fade-up">
-
                 <span class="section-badge">
-
                     <i class="fa-solid fa-newspaper"></i>
-
                     BERITA &amp; KEGIATAN
-
                 </span>
-
                 <h2>Informasi Terbaru</h2>
-
                 <p>
-
                     Ikuti perkembangan terkini seputar kegiatan, program, dan pengumuman
                     resmi dari PERUMDAM Among Tirto Kota Batu.
-
                 </p>
-
             </div>
-
-            <div class="news-grid">
-
-                <!-- CARD 1 -->
-                <article class="news-item fade-up delay-1">
-
-                    <div class="news-img-wrapper">
-
-                        <img src="assets/images/news-1.jpg" alt="Penghargaan BUMD"
-                            onerror="this.src='assets/images/hero.jpg'; this.onerror=null;">
-
-                        <div class="news-badge">Pengumuman</div>
-
-                    </div>
-
-                    <div class="news-content">
-
-                        <div class="news-meta">
-
-                            <span><i class="fa-regular fa-calendar"></i> 05 Agustus 2026</span>
-
-                            <span><i class="fa-regular fa-folder-open"></i> Prestasi</span>
-
-                        </div>
-
-                        <h4>PERUMDAM Among Tirto Raih Penghargaan BUMD Terbaik Jawa Timur 2026</h4>
-
-                        <p>PERUMDAM Among Tirto Kota Batu sukses meraih penghargaan kategori BUMD Air Minum dengan
-                            kinerja operasional dan pelayanan publik terbaik se-Jawa Timur.</p>
-
-                        <a href="artikel.html" class="news-link">
-
-                            Selengkapnya
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <!-- CARD 2 -->
-                <article class="news-item fade-up delay-2">
-
-                    <div class="news-img-wrapper">
-
-                        <img src="assets/images/news-2.jpg" alt="Pemasangan Perpipaan"
-                            onerror="this.src='assets/images/hero.jpg'; this.onerror=null;">
-
-                        <div class="news-badge">Kegiatan</div>
-
-                    </div>
-
-                    <div class="news-content">
-
-                        <div class="news-meta">
-
-                            <span><i class="fa-regular fa-calendar"></i> 01 Agustus 2026</span>
-
-                            <span><i class="fa-regular fa-folder-open"></i> Infrastruktur</span>
-
-                        </div>
-
-                        <h4>Pemasangan Jaringan Perpipaan Baru di Wilayah Bumiaji Kota Batu</h4>
-
-                        <p>Langkah strategis perluasan jaringan pipa distribusi air minum guna meningkatkan cakupan
-                            layanan dan kelancaran suplai air di kawasan Bumiaji.</p>
-
-                        <a href="artikel.html" class="news-link">
-
-                            Selengkapnya
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <!-- CARD 3 -->
-                <article class="news-item fade-up delay-1">
-
-                    <div class="news-img-wrapper">
-
-                        <img src="assets/images/news-3.jpg" alt="Pembayaran Digital QRIS"
-                            onerror="this.src='assets/images/hero.jpg'; this.onerror=null;">
-
-                        <div class="news-badge">Informasi</div>
-
-                    </div>
-
-                    <div class="news-content">
-
-                        <div class="news-meta">
-
-                            <span><i class="fa-regular fa-calendar"></i> 28 Juli 2026</span>
-
-                            <span><i class="fa-regular fa-folder-open"></i> Layanan</span>
-
-                        </div>
-
-                        <h4>Kini Pembayaran Tagihan Air Dapat Dilakukan Melalui QRIS &amp; Mobile Banking</h4>
-
-                        <p>Memudahkan pelanggan dalam bertransaksi secara serba digital, pembayaran rekening air kini
-                            terintegrasi dengan jaringan QRIS dan berbagai m-Banking.</p>
-
-                        <a href="artikel.html" class="news-link">
-
-                            Selengkapnya
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <!-- CARD 4 -->
-                <article class="news-item fade-up delay-2">
-
-                    <div class="news-img-wrapper">
-
-                        <img src="assets/images/news-4.jpg" alt="Sosialisasi Air Bersih"
-                            onerror="this.src='assets/images/hero.jpg'; this.onerror=null;">
-
-                        <div class="news-badge">Sosialisasi</div>
-
-                    </div>
-
-                    <div class="news-content">
-
-                        <div class="news-meta">
-
-                            <span><i class="fa-regular fa-calendar"></i> 20 Juli 2026</span>
-
-                            <span><i class="fa-regular fa-folder-open"></i> Lingkungan</span>
-
-                        </div>
-
-                        <h4>Sosialisasi Penggunaan Air Bersih &amp; Konservasi Mata Air Kota Batu</h4>
-
-                        <p>Kegiatan edukasi masyarakat bersama tokoh lokal mengenai pentingnya efisiensi pemakaian air
-                            serta menjaga kelestarian sumber mata air alam.</p>
-
-                        <a href="artikel.html" class="news-link">
-
-                            Selengkapnya
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-
+            <!-- Komponen News Cards -->
+            <div id="news-cards-component"></div>
         </div>
-
     </section>
 
     <!-- ======================================================
-                    CTA WAVE DIVIDER (REVERSED 3-COLOR)
+                    CTA WAVE DIVIDER
     ======================================================= -->
-
     <div class="cta-wave-top">
-
         <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-
             <defs>
-
-                <!-- Layer 1: Fresh Lime-Emerald Accent Gradient -->
                 <linearGradient id="cta-wave-lime-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-
                     <stop offset="0%" stop-color="#A3E635" stop-opacity="0.95" />
-
                     <stop offset="45%" stop-color="#84CC16" stop-opacity="0.9" />
-
                     <stop offset="100%" stop-color="#10B981" stop-opacity="0.85" />
-
                 </linearGradient>
-
-                <!-- Layer 2: Ocean Cyan-Blue Gradient -->
                 <linearGradient id="cta-wave-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-
                     <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.95" />
-
                     <stop offset="100%" stop-color="#0284C7" stop-opacity="0.95" />
-
-                    <!-- Layer 3: Matching CTA Section Background Gradient -->
-                    <linearGradient id="cta-wave-main-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-
-                        <stop offset="0%" stop-color="#0A325C" />
-
-                        <stop offset="100%" stop-color="#1660A0" />
-
-                    </linearGradient>
-
+                </linearGradient>
+                <linearGradient id="cta-wave-main-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0A325C" />
+                    <stop offset="100%" stop-color="#1660A0" />
+                </linearGradient>
             </defs>
-
-            <!-- Layer 1 (Back Accent): Lime-Green Wave -->
-
-            <path fill="url(#cta-wave-lime-grad)"
-                d="M0,35 C300,155 500,15 800,85 C1100,155 1280,25 1440,65 L1440,200 L0,200 Z">
-
-            </path>
-
-            <!-- Layer 2 (Middle): Ocean Cyan Blue Wave -->
-
-            <path fill="url(#cta-wave-cyan-grad)"
-                d="M0,70 C240,15 480,145 760,55 C1040,-25 1260,105 1440,75 L1440,200 L0,200 Z">
-
-            </path>
-
-            <!-- Layer 3 (Foreground): Matches CTA Background Gradient Seamlessly -->
-
-            <path fill="url(#cta-wave-main-grad)"
-                d="M0,105 C340,155 600,60 900,115 C1200,170 1320,90 1440,110 L1440,200 L0,200 Z">
-
-            </path>
-
+            <path fill="url(#cta-wave-lime-grad)" d="M0,35 C300,155 500,15 800,85 C1100,155 1280,25 1440,65 L1440,200 L0,200 Z"></path>
+            <path fill="url(#cta-wave-cyan-grad)" d="M0,70 C240,15 480,145 760,55 C1040,-25 1260,105 1440,75 L1440,200 L0,200 Z"></path>
+            <path fill="url(#cta-wave-main-grad)" d="M0,105 C340,155 600,60 900,115 C1200,170 1320,90 1440,110 L1440,200 L0,200 Z"></path>
         </svg>
-
     </div>
 
     <!-- ======================================================
                     CTA SECTION
     ======================================================= -->
-
     <section class="cta">
-
         <div class="container">
-
             <div class="cta-wrapper">
-
                 <div class="cta-left">
-
                     <span>PERUMDAM AMONG TIRTO KOTA BATU</span>
-
                     <h2>Kami Siap Memberikan Pelayanan Terbaik Untuk Anda</h2>
-
                     <p>
-
                         Hubungi Customer Service kami apabila membutuhkan bantuan, mengalami gangguan,
                         atau ingin memperoleh informasi seputar layanan air minum.
-
                     </p>
-
                 </div>
-
                 <div class="cta-right">
-
                     <a href="#footer" class="btn-hero-primary">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        Hubungi Kami
-
+                        <i class="fa-solid fa-phone"></i> Hubungi Kami
                     </a>
-
                     <a href="#billing" class="btn-hero-glass">
-
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-
-                        Cek Tagihan
-
+                        <i class="fa-solid fa-file-invoice-dollar"></i> Cek Tagihan
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
     <!-- ======================================================
                     FOOTER
     ======================================================= -->
-
-    <footer id="footer" class="footer">
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <div class="footer-company">
-
-                    <div class="footer-logo">
-
-                        <img src="assets/images/logo-pdam.png" alt="Logo PERUMDAM">
-
-                        <div>
-
-                            <h3>PERUMDAM</h3>
-
-                            <span>Among Tirto Kota Batu</span>
-
-                        </div>
-
-                    </div>
-
-                    <p>
-
-                        PERUMDAM Among Tirto Kota Batu merupakan BUMD yang bergerak dalam
-                        pelayanan air minum dengan mengedepankan kualitas, profesionalisme,
-                        dan pelayanan prima.
-
-                    </p>
-
-                    <div class="footer-social">
-
-                        <a href="https://facebook.com" aria-label="Facebook">
-
-                            <i class="fab fa-facebook-f"></i>
-
-                        </a>
-
-                        <a href="https://instagram.com" aria-label="Instagram">
-
-                            <i class="fab fa-instagram"></i>
-
-                        </a>
-
-                        <a href="https://youtube.com" aria-label="Youtube">
-
-                            <i class="fab fa-youtube"></i>
-
-                        </a>
-
-                        <a href="https://pdamkotabatu.com" aria-label="Website">
-
-                            <i class="fa-solid fa-globe"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="footer-menu">
-
-                    <h4>Navigasi</h4>
-
-                    <ul>
-
-                        <li><a href="#home">Home</a></li>
-
-                        <li><a href="#billing">Cek Tagihan</a></li>
-
-                        <li><a href="#services">Layanan Kami</a></li>
-
-                        <li><a href="#news">Berita</a></li>
-
-                    </ul>
-
-                </div>
-
-                <div class="footer-menu">
-
-                    <h4>Layanan</h4>
-
-                    <ul>
-
-                        <li><a href="#">Sambungan Baru</a></li>
-
-                        <li><a href="#">Pengaduan 24/7</a></li>
-
-                        <li><a href="#">Tarif Air</a></li>
-
-                        <li><a href="#">Download Formulir</a></li>
-
-                    </ul>
-
-                </div>
-
-                <div class="footer-contact">
-
-                    <h4>Kontak Kami</h4>
-
-                    <ul>
-
-                        <li>
-
-                            <i class="fa-solid fa-location-dot"></i>
-
-                            Jl. Panglima Sudirman, Kota Batu, Jawa Timur
-
-                        </li>
-
-                        <li>
-
-                            <i class="fa-solid fa-phone"></i>
-
-                            (0341) 123456
-
-                        </li>
-
-                        <li>
-
-                            <i class="fa-solid fa-envelope"></i>
-
-                            info@perumdamkotabatu.co.id
-
-                        </li>
-
-                        <li>
-
-                            <i class="fa-solid fa-clock"></i>
-
-                            Senin - Jumat: 08.00 - 15.30 WIB
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="copyright">
-
-                &copy; 2026 PERUMDAM Among Tirto Kota Batu. Seluruh Hak Cipta Dilindungi.
-
-            </div>
-
-        </div>
-
-    </footer>
+    <div id="footer-component"></div>
 
     <!-- ==========================================
-            FLOATING BUTTONS (Pojok Kanan Bawah)
+            FLOATING BUTTONS 
     =========================================== -->
-
     <a href="https://wa.me/628123456789" class="floating-whatsapp" target="_blank" aria-label="WhatsApp CS">
-
         <i class="fab fa-whatsapp"></i>
-
     </a>
-
     <a href="#footer" class="floating-help" aria-label="Help Center">
-
         <i class="fa-solid fa-headset"></i>
-
     </a>
-
     <a href="#home" class="back-to-top" aria-label="Back to Top">
-
         <i class="fa-solid fa-arrow-up"></i>
-
     </a>
 
     <!-- ==========================================
             JAVASCRIPT
     =========================================== -->
-
+    <!-- Script komponen dipanggil pertama -->
+    <script src="assets/js/components.js"></script>
+    <!-- Script utama dipanggil setelahnya -->
     <script src="assets/js/script.js"></script>
 
 </body>
-
 </html>
